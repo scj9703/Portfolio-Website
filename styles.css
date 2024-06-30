@@ -219,6 +219,8 @@
     padding: 0 50px;
 }
 
+
+
 .main__content h1{
     font-size: 4rem;
     background-color: #ff8177;
@@ -246,6 +248,67 @@
     font-size: 2rem;
     font-weight: 700;
     color: #fff;
+}
+
+.about__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 100%;
+    background-color: #141414;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 50px 50px 100px 50px;
+}
+
+.about__content h1{
+    font-size: 4rem;
+    text-align: center;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.about__content h2 {
+    font-size: 4rem;
+    text-align: center;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.about__content p {
+    margin-top: 1rem;
+    text-align: left;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.about__content hr {
+    border-color: #ff8177;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.about__content span {
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
 
 .main__btn {
@@ -296,6 +359,9 @@
 
 /* Mobile Responsive Hero */
 @media screen and (max-width: 768px) {
+    .main{
+        height: 100%;
+    }
     .main__container{
         display: grid;
         grid-template-columns: auto;
@@ -323,6 +389,7 @@
         margin-top: 1rem;
         font-size: 1.5 rem;
     }
+
 }
 @media screen and (max-width: 480px){
     .main__content h1 {
